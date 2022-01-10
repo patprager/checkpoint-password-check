@@ -6,6 +6,8 @@
   --h1-font-family: "Lobster", cursive;
   --text-font-family: "Open Sans", sans-serif;
   --body-background-color: lightsalmon;
+  --border-color: black;
+  --shadow-color: #1a1a1a;
 }
 /* one column layout below 700px screen width */
 @media screen and (min-width: 700px) {
@@ -30,9 +32,24 @@ h1 {
   font-size: 3.5rem;
 
   color: snow;
-  text-shadow: 2px 2px #1a1a1a;
+  text-shadow: 2px 2px var(--shadow-color);
 }
 
 .checked-content-list {
   text-align: center;
+}
+
+.second-password-field {
+  margin-top: 0.25rem;
+}
+
+#show-hide-button {
+  margin-top: 0.95rem;
+  border: solid 0.125rem var(--border-color);
+  border-radius: 0.125rem;
+}
+
+#style-password-field {
+  border: var(--border-color);
+  border-radius: 0.125rem;
 }
