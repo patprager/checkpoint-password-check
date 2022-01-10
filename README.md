@@ -1,1 +1,1 @@
-Checkpoint Task — Password App
+Checkpoint Task — Password Check App
