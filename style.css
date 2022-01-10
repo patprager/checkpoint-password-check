@@ -11,7 +11,7 @@
 @media screen and (min-width: 700px) {
 }
 /* two column layout above 700px screen width */
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
 }
 
 body {
