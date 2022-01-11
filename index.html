@@ -27,37 +27,41 @@
     <header>
       <h1>Password Check</h1>
     </header>
-    <main class="password-check-section">
-      <!-- Password field -->
-      <section class="first-password-field">
-        <input
-          class="style-password-box"
-          type="password"
-          name="password"
-          id="first-password-input"
-        />
-      </section>
-      <section class="second-password-field">
-        <input
-          class="style-password-box"
-          type="password"
-          name="password"
-          id="second-password-input"
-        />
-      </section>
+    <main>
+      <article id="pw-content">
+        <!-- Password field -->
+        <section class="first-password-field">
+          <input
+            class="style-password-box"
+            type="password"
+            name="password"
+            id="first-password-input"
+          />
+        </section>
+        <section class="second-password-field">
+          <input
+            class="style-password-box"
+            type="password"
+            name="password"
+            id="second-password-input"
+          />
+        </section>
 
-      <!-- An element to toggle between password visibility -->
-      <section>
-        <button id="show-hide-button">Show Passwords</button>
-      </section>
+        <!-- An element to toggle between password visibility -->
+        <section>
+          <button id="show-hide-button">
+            <i id="hide-button"></i>Show Passwords
+          </button>
+        </section>
+      </article>
 
       <!-- checked content-list for the password-box -->
       <section class="checked-content-list">
-        <p>Password are equal</p>
-        <p>Lower Case Letters</p>
-        <p>Upper Case Letters</p>
-        <p>Contains Numbers</p>
-        <p>At least 10 characters long</p>
+        <p id="equal-password">Password are equal</p>
+        <p id="lower-case">Lower Case Letters</p>
+        <p id="upper-case">Upper Case Letters</p>
+        <p id="contains-numbers">Contains Numbers</p>
+        <p id="least-ten-characters">At least 10 characters long</p>
       </section>
     </main>
 
