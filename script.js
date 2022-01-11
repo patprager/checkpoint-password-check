@@ -33,21 +33,47 @@ window.addEventListener("load", function () {
  leastOneNumber, leastTenCharacters = false 
 
  document.querySelector("#equal-password").addEventListener("click", clickedBtn);
+ const passwordEqual = document.querySelector("input").addEventListener("click", button)
+ 
+ function filterModusEqual (){
+    const equalChecked = document.querySelector("input").addEventListener("click", button)
+    const passwordEqual = firstPwInput === secondPwInput
 
-2. Passwort enthält mindestens einen "lowerCaseLetter"
-
-3. Passwort enthält mindestens einen "uperCaseLetter"
-
-4. Passwort enthält mind. eine Zahl
-
-5. Passwort ist mind. 10 Zeichen lang
-
-function filterModus (){
-    const passwordEqual = document.querySelector("input").addEventListener("click", button)
-    if () {
-        passwordEqual = true;
-    } else {
-        
+    if (passwordEqual === true) {
+        const EqualIsTrue = document.createElement("✅");
+        equalChecked.appendChild(EqualIsTrue);
+} else {
+    passwordEqual === false;
+    const EqualIsFalse = document.createElement("❌"); 
+    equalChecked.appendChild(EqualIsFalse)    
     }
 }
+
+2. Passwort enthält mindestens einen "lowerCaseLetter"
+const lowerCaseLetter = /a-z/; | if passwordEqual = true, 
+than überprüfe den passwordInput auf lowerCaseLetter
+
+function checkedLowerCase (passwordEqual === true) {
+    const lowerCaseChecked = document.querySelector("input").addEventListener("click", button);
+    const lowerCaseLetter = for ("input" = /a-z/; "input" > 10; i++)
+
+   if (lowerCaseLetter === true) {
+    const lowerCaseIsTrue = document.createElement("✅");
+    lowerCaseChecked.appendChild(lowerCaseIsTrue);
+   } else {
+       lowerCaseLetter = false;
+       const lowerCaseIsFalse = document.createElement("❌");
+       lowerCaseChecked.appendChild(lowerCaseIsFalse);
+   }
+}
+
+3. Passwort enthält mindestens einen "upperCaseLetter"
+const upperCaseLetter = /A-Z/
+
+4. Passwort enthält mind. eine Zahl
+const leastOneNumber = /0-9/
+
+5. Passwort ist mind. 10 Zeichen lang (.lenght > 10)
+
+
   */
