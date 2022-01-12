@@ -28,7 +28,7 @@
       <h1>Password Check</h1>
     </header>
     <main>
-      <article id="pw-content">
+      <form>
         <!-- Password field -->
         <section class="first-password-field">
           <input
@@ -38,6 +38,7 @@
             id="first-password-input"
           />
         </section>
+
         <section class="second-password-field">
           <input
             class="style-password-box"
@@ -46,23 +47,21 @@
             id="second-password-input"
           />
         </section>
-
-        <!-- An element to toggle between password visibility -->
-        <section>
-          <button id="show-hide-button">
-            <i id="hide-button"></i>Show Passwords
-          </button>
-        </section>
-      </article>
+      </form>
+      <!-- An element to toggle between password visibility -->
+      <button id="show-hide-button" class="password-button">
+        Show Passwords
+      </button>
 
       <!-- checked content-list for the password-box -->
-      <section class="checked-content-list">
-        <p id="equal-password">Password are equal</p>
-        <p id="lower-case">Lower Case Letters</p>
-        <p id="upper-case">Upper Case Letters</p>
-        <p id="contains-numbers">Contains Numbers</p>
-        <p id="least-ten-characters">At least 10 characters long</p>
-      </section>
+
+      <ul class="checked-content-list">
+        <li id="equal-password">Password are equal</li>
+        <li id="lower-case">Lower Case Letters</li>
+        <li id="upper-case">Upper Case Letters</li>
+        <li id="contains-numbers">Contains Numbers</li>
+        <li id="least-ten-characters">At least 10 characters long</li>
+      </ul>
     </main>
 
     <script src="script.js"></script>
