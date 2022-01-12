@@ -3,7 +3,6 @@
 }
 
 :root {
-  --h1-font-family: "Lobster", cursive;
   --text-font-family: "Open Sans", sans-serif;
   --body-background-color: lightsalmon;
   --border-color: black;
@@ -26,18 +25,17 @@ body {
 }
 
 h1 {
-  font-family: var(--h1-font-family);
+  font-family: "Lobster", cursive;
   font-size: 3.5rem;
 
   color: snow;
   text-shadow: 2px 2px var(--shadow-color);
 }
 
-.style-password-box {
-  justify-content: center;
-}
 .checked-content-list {
   text-align: center;
+  line-height: 2rem;
+  list-style-type: none;
   margin-top: 3rem;
 }
 
@@ -48,9 +46,10 @@ h1 {
 .style-password-box {
   border: 2px solid var(--border-color);
   border-radius: 0.125rem;
+  justify-content: center;
 }
 
-#show-hide-button {
+.password-button {
   margin-top: 0.55rem;
   border: solid 0.125rem var(--border-color);
   border-radius: 0.125rem;
@@ -63,7 +62,7 @@ h1 {
   height: 2rem;
 }
 
-p::after {
+li::after {
   content: "❌";
   margin-left: 0.5rem;
 }
