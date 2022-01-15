@@ -28,48 +28,54 @@
       <h1>Password Check</h1>
     </header>
     <main>
-      <form id="password-input-field">
-        <!-- Password field -->
-        <section class="first-password-field">
-          <input
-            class="style-password-box"
-            type="password"
-            name="password"
-            id="first-password-input"
-          />
-        </section>
+      <!-- Password field -->
+      <section class="password-card">
+        <input
+          class="style-password-box"
+          type="password"
+          name="password"
+          id="first-password-input"
+        />
 
-        <section class="second-password-field">
-          <input
-            class="style-password-box"
-            type="password"
-            name="password"
-            id="second-password-input"
-          />
-        </section>
-      </form>
-      <!-- An element to toggle between password visibility -->
-      <button id="show-hide-button" class="password-button">
-        Show Passwords
-      </button>
+        <input
+          class="style-password-box"
+          type="password"
+          name="password"
+          id="second-password-input"
+        />
 
+        <!-- An element to toggle between password visibility -->
+        <button id="show-hide-button" class="password-button">
+          Show Passwords
+        </button>
+      </section>
       <!-- checked content-list for the password-box -->
 
       <ul class="checked-content-list">
-        <li>Password are equal</li>
-        <li id="equal-password">❌</li>
+        <li>
+          Password are equal
+          <span class="content-status" id="equal-password">❌</span>
+        </li>
 
-        <li>Lower Case Letters</li>
-        <li id="lower-case">❌</li>
+        <li>
+          Lower Case Letters
+          <span class="content-status" id="lower-case">❌</span>
+        </li>
 
-        <li>Upper Case Letters</li>
-        <li id="upper-case">❌</li>
+        <li>
+          Upper Case Letters
+          <span class="content-status" id="upper-case">❌</span>
+        </li>
 
-        <li>Contains Numbers</li>
-        <li id="contains-numbers">❌</li>
+        <li>
+          Contains Numbers
+          <span class="content-status" id="contains-numbers">❌</span>
+        </li>
 
-        <li>At least 10 characters long</li>
-        <li id="least-ten-characters">❌</li>
+        <li>
+          At least 10 characters long
+          <span class="content-status" id="least-ten-characters">❌</span>
+        </li>
       </ul>
     </main>
 
