@@ -21,7 +21,6 @@ showHideButton.addEventListener("click", function () {
     showHideButton.innerText = "Show Password";
   }
 
-  const passwordInput = document.querySelector("#password-input-field");
   passwordInput.addEventListener("input", function () {
     const equalPassword = document.querySelector("#equal-password");
     const checkLowerCaseLetter = document.querySelector("#lower-case");
