@@ -61,8 +61,3 @@ h1 {
   width: 13rem;
   height: 2rem;
 }
-
-li::after {
-  content: "❌";
-  margin-left: 0.5rem;
-}
