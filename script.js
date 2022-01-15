@@ -24,42 +24,41 @@ showHideButton.addEventListener("click", function () {
   const passwordInput = document.querySelector("#password-input-field");
   passwordInput.addEventListener("input", function () {
     const equalPassword = document.querySelector("#equal-password");
+    const checkLowerCaseLetter = document.querySelector("#lower-case");
+    const checkUpperCaseLetter = document.querySelector("#upper-case");
+    const checkLeastOneNumber = document.querySelector("#contains-numbers");
+    const leastTenCharacters = document.querySelector("#least-ten-characters");
+    // Prüfe die anderen nur, wenn Password equal!
     if (
       firstPasswordInput.value === secondPasswordInput.value &&
       firstPasswordInput.value !== ""
     ) {
       equalPassword.innerHTML = "✅";
-      // Prüfe die anderen nur, wenn Password equal!
+      // Prüfungen auf lowerCaseLetter
       const lowerCaseLetter = (string1) => /[a-z]/.test(string1);
-      const checkLowerCaseLetter = document.querySelector("#lower-case");
 
       if (lowerCaseLetter(firstPasswordInput.value)) {
         checkLowerCaseLetter.innerHTML = "✅";
       } else {
         checkLowerCaseLetter.innerHTML = "❌";
       }
-
+      // Prüfung auf upperCaseLetter
       const upperCaseLetter = (string2) => /[A-Z]/.test(string2);
-      const checkUpperCaseLetter = document.querySelector("#upper-case");
 
       if (upperCaseLetter(firstPasswordInput.value)) {
         checkUpperCaseLetter.innerHTML = "✅";
       } else {
         checkUpperCaseLetter.innerHTML = "❌";
       }
-
+      // Prüfung auf Zahlen
       const leastOneNumber = (string3) => /[0-9]/.test(string3);
-      const checkLeastOneNumber = document.querySelector("#contains-numbers");
 
       if (leastOneNumber(firstPasswordInput.value)) {
         checkLeastOneNumber.innerHTML = "✅";
       } else {
         checkLeastOneNumber.innerHTML = "❌";
       }
-
-      const leastTenCharacters = document.querySelector(
-        "#least-ten-characters"
-      );
+      // Prüfung auf die Länge des Passwords
       if (firstPasswordInput.value.length >= 10) {
         leastTenCharacters.innerHTML = "✅";
       } else {
@@ -67,6 +66,10 @@ showHideButton.addEventListener("click", function () {
       }
     } else {
       equalPassword.innerHTML = "❌";
+      checkLowerCaseLetter.innerHTML = "❌";
+      checkUpperCaseLetter.innerHTML = "❌";
+      checkLeastOneNumber.innerHTML = "❌";
+      leastTenCharacters.innerHTML = "❌";
     }
   });
 });
