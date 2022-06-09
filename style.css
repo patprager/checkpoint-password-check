@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-font-family: "Open Sans", sans-serif;
+  --body-background-color: lightsalmon;
+  --border-color: black;
+  --shadow-color: #1a1a1a;
+}
+
+/* two column layout above 700px screen width */
+@media screen and (max-width: 700px) {
+  header,
+  .password-card,
+  .checked-content-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header,
+  .password-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  /*.checked-content-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }*/
+}
+
+body {
+  margin: 0px;
+  _display: flex;
+  _flex-direction: column;
+  _align-items: center;
+
+  background-color: var(--body-background-color);
+  font-family: var(--text-font-family);
+  font-size: 1.125rem;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 3.5rem;
+
+  color: snow;
+  text-shadow: 2px 2px var(--shadow-color);
+}
+
+.checked-content-list {
+  text-align: center;
+  line-height: 2rem;
+  list-style-type: none;
+  margin-top: 3rem;
+}
+
+.second-password-field {
+  margin-top: 0.55rem;
+}
+
+.style-password-box {
+  border: 2px solid var(--border-color);
+  border-radius: 0.125rem;
+  justify-content: center;
+}
+
+.password-button {
+  margin-top: 0.55rem;
+  border: solid 0.125rem var(--border-color);
+  border-radius: 0.125rem;
+
+  background-color: black;
+  color: snow;
+  font-size: 15px;
+
+  width: 13rem;
+  height: 2rem;
+}
+
+.content-status {
+  margin-left: 0.25rem;
+}

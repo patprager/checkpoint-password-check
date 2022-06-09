@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint Password Check App</title>
+    <meta
+      name="description"
+      content="This is the checkpoint password-check Application"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css "
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Password Check</h1>
+    </header>
+    <main>
+      <!-- Password field -->
+      <section class="password-card">
+        <input
+          class="style-password-box"
+          type="password"
+          name="password"
+          id="first-password-input"
+        />
+
+        <input
+          class="style-password-box"
+          type="password"
+          name="password"
+          id="second-password-input"
+        />
+
+        <!-- An element to toggle between password visibility -->
+        <button id="show-hide-button" class="password-button">
+          Show Passwords
+        </button>
+      </section>
+      <!-- checked content-list for the password-box -->
+
+      <ul class="checked-content-list">
+        <li>
+          Password are equal
+          <span class="content-status" id="equal-password">❌</span>
+        </li>
+
+        <li>
+          Lower Case Letters
+          <span class="content-status" id="lower-case">❌</span>
+        </li>
+
+        <li>
+          Upper Case Letters
+          <span class="content-status" id="upper-case">❌</span>
+        </li>
+
+        <li>
+          Contains Numbers
+          <span class="content-status" id="contains-numbers">❌</span>
+        </li>
+
+        <li>
+          At least 10 characters long
+          <span class="content-status" id="least-ten-characters">❌</span>
+        </li>
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
